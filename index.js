@@ -50,4 +50,30 @@ function lowercaseFirstLetter(string){
     return string.replace(/^./,match => match.toLowerCase())
 }
 let result = lowercaseFirstLetter("HELLO wORLD");
+
 console.log(result);
+
+/*7) Write a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u, A, E, I, O, U) in the string. It should filter vowels from the string. */
+
+function countVowels(string){
+    let vowels = string.match(/[aeiouAEIOU]/g);
+    return vowels ? vowels.length: 0 ;
+}
+
+console.log(countVowels("Hello World"));
+
+// we can find out the vowels by below method too.
+
+function countVowels(string){
+    let vowels = "aeiouAEIOU"
+    let count= 0
+
+
+for (let character of string){
+    if (vowels.includes(character)){ count++;
+    }
+}
+return count;
+}
+
+console.log(countVowels("Hello World"));
