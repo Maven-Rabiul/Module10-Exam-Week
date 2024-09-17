@@ -30,7 +30,24 @@ function filterEvenNumbers(arr){
     return arr.filter(number=>number % 2===0);
 }
 
-let number=[11,12,13,14,15,16,17,18,19,20];
+let number=[8,10,11,66,12,79,13,14,54,15,16,80,17,22,18,32,19,20];
 let evenNumbers=filterEvenNumbers(number);
 console.log(evenNumbers);
+/*5) Write a function named sortArrayDescending that takes an array of numbers and returns a new array sorted in descending order. */
 
+function sortArrayDescending(arr){
+    return arr.slice().sort((a,b) => b-a);
+
+}
+    let numArray = [20,23,22,28,25,32,55,66,80,62];
+    let sortedArray = sortArrayDescending(numArray);
+
+console.log(sortedArray);
+
+/* 6) Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased.  */
+
+function lowercaseFirstLetter(string){
+    return string.replace(/^./,match => match.toLowerCase())
+}
+let result = lowercaseFirstLetter("HELLO wORLD");
+console.log(result);
