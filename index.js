@@ -77,3 +77,19 @@ return count;
 }
 
 console.log(countVowels("Hello World"));
+
+/* 8) Write a function named findAverage that takes an array of numbers and returns the average of all elements.
+*/
+
+function findAverage(array){
+    if (array.length === 0){
+        return 0;
+    }
+    let sum = 0;
+    for (let i = 0; i < array.length; i++){
+        sum += array[i];
+    }
+    return sum / array.length;
+}
+let average=findAverage([20,30,40,45,70,65]);
+console.log(average);
