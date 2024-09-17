@@ -1,5 +1,5 @@
 
-/*Write a function named calculateDifference that takes two arguments and returns the difference between the first and second argument.*/
+/* 1) Write a function named calculateDifference that takes two arguments and returns the difference between the first and second argument.*/
 
 function calculateDifference(a, b) {return a - b;}
 let output = calculateDifference(100, 5);
@@ -24,4 +24,13 @@ function findMin(numbers){
 let numbers = [85,100,25,32,76,55,59,11];
 console.log(findMin(numbers));
 
+/* 4) Write a function named filterEvenNumbers that takes an array of numbers and returns a new array containing only the even numbers. */
+
+function filterEvenNumbers(arr){
+    return arr.filter(number=>number % 2===0);
+}
+
+let number=[11,12,13,14,15,16,17,18,19,20];
+let evenNumbers=filterEvenNumbers(number);
+console.log(evenNumbers);
 
